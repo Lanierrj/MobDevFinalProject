@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MobDevFinalProject.ViewModels"
+             x:DataType="vm:DetailsPageViewModel"
+             x:Class="MobDevFinalProject.DetailsPage"
+             Title="DetailsPage" 
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#111111">
+    <VerticalStackLayout Padding="30" Spacing="5">
+        <Label x:Name="dayTime" FontSize="Title" Text="{Binding Day.Time}" TextColor="White"/>
+        <Label Text="Work Out Type" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.WOType}" FontSize="Medium" TextColor="White" Placeholder="Enter"/>
+        <Label Text="Workout Length" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.Length}" FontSize="Medium" TextColor="White"/>
+        <Label Text="Work Out Type" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.Calories}" FontSize="Medium" TextColor="White"/>
+        <Label Text="Protein Intake (g)" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.Protein}" FontSize="Medium" TextColor="White"/>
+        <Label Text="Fat Intake (g)" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.Fat}" FontSize="Medium" TextColor="White"/>
+        <Label Text="Carb Intake (g)" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.Carbs}" FontSize="Medium" TextColor="White"/>
+        <Label Text="Water Intake (ml)" FontSize="Medium" TextColor="White"/>
+        <Entry Text="{Binding Day.Water}" FontSize="Medium" TextColor="White"/>
+        <Button
+            Text="Back" 
+            Clicked="Back_Button"
+            HorizontalOptions="Fill" 
+            BackgroundColor="RoyalBlue"
+            TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>

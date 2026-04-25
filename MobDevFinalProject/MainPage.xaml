@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="MobDevFinalProject.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#111111">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30, 15"
+            Spacing="15">
+            <Button
+                Text="To Calender" 
+                Clicked="Button_Clicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="RoyalBlue"
+                TextColor="White"/>
+            <Button
+                Text="Refresh Data" 
+                Clicked="Button_Clicked_1"
+                HorizontalOptions="Fill" 
+                BackgroundColor="RoyalBlue"
+                TextColor="White"/>
+            <Border StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="RoyalBlue"
+                    Background="#222222"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Time Spent Working Out" TextColor="White"/>
+                    <micro:ChartView x:Name="woMins" HeightRequest="300"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="RoyalBlue"
+                    Background="#222222"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Calorie Intake" TextColor="White"/>
+                    <micro:ChartView x:Name="calList" HeightRequest="300"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="RoyalBlue"
+                    Background="#222222"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Protein Intake" TextColor="White"/>
+                    <micro:ChartView x:Name="protList" HeightRequest="300"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="RoyalBlue"
+                    Background="#222222"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Fat Intake" TextColor="White"/>
+                    <micro:ChartView x:Name="fatList" HeightRequest="300"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="RoyalBlue"
+                    Background="#222222"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Carbohydrate Intake" TextColor="White"/>
+                    <micro:ChartView x:Name="carbList" HeightRequest="300"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="RoyalBlue"
+                    Background="#222222"
+                    Padding="10"
+                    HorizontalOptions="Center">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Water Intake" TextColor="White"/>
+                    <micro:ChartView x:Name="waterList" HeightRequest="300"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
